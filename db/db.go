@@ -32,7 +32,7 @@ type User struct {
 	TransferEnable int64  `gorm:"column:transfer_enable"`
 	Method         string `gorm:"column:method"`
 	Password       string `gorm:"column:passwd"`
-	Limit          uint64 `gorm:"column:speed_limit_per_user"`
+	Limit          uint64 `gorm:"column:speed_limit"`
 }
 
 type DBTraffic struct {
